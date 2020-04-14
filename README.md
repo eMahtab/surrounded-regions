@@ -136,5 +136,5 @@ class Solution {
 ```
 
 # References :
-1. 
-2. 
+1. https://www.youtube.com/watch?v=xfPyRVGmUy0 (1st Implementation)
+2. https://www.youtube.com/watch?v=ztTLGMeleco (2nd Implementation)
