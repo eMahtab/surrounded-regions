@@ -23,6 +23,14 @@ X O X X
 
 Surrounded regions shouldn’t be on the border, which means that any 'O' on the border of the board are not flipped to 'X'. Any 'O' that is not on the border and it is not connected to an 'O' on the border will be flipped to 'X'. Two cells are connected if they are adjacent cells connected horizontally or vertically.
 
+## Approach :
+We can solve this problem by first marking all the O's which are either on 4 borders or are connected to one of the O's, that is on the border. Because we don't have to flip these O's to X's. We can use a `visited` array to mark that we have already visited a cell.
+We only have to flip O's which are completely surrounded by X's. 
+
+To do that, now we will iterate over the board, starting from the second row and second column. And if we found both of the below 2 conditions to be true, then we will flip that O to X, also all of its unvisited neighbor cells which are O will be flipped to X.
+
+1. Value at the cell is O
+2. This cell is not already visited
 
 ![Surrounded Regions](surrounded-regions.PNG?raw=true "Surrounded Regions")
 
