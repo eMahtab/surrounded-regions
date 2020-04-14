@@ -1,6 +1,9 @@
 # Surrounded Regions
 
 
+
+![Surrounded Regions](surrounded-regions.PNG?raw=true "Surrounded Regions")
+
 ## Implementation 
 
 ```java
