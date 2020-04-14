@@ -30,7 +30,9 @@ We only have to flip O's which are completely surrounded by X's.
 To do that, now we will iterate over the board, starting from the second row and second column. And if we found both of the below 2 conditions to be true, then we will flip that O to X, also all of its unvisited neighbor cells which are O will be flipped to X.
 
 1. Value at the cell is O
-2. This cell is not already visited
+2. The cell is not already visited
+
+In the board shown below, the O's in the blue color will not be flipped but the O's in the yellow color will be flipped to X's.
 
 ![Surrounded Regions](surrounded-regions.PNG?raw=true "Surrounded Regions")
 
