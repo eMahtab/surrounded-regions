@@ -90,6 +90,7 @@ Another way to solve this problem would be by doing dfs on the border cells whos
 Once this is done, all we have to do is start traversing the board, and If we find a cell with value 'O' then we flip its value to 'X', because this 'O' was surrounded by all 'X's. And If we find a cell with value `*`, then we change its value back to 'O', because we initially set this cell to `*` during dfs.
 
 In the board shown below, the O's in the blue color will be initially flipped to `*` but will finally be set to 'O', but the O's in the yellow color will be flipped to X's.
+
 ![Surrounded Regions](surrounded-regions.PNG?raw=true "Surrounded Regions")
 
 ## Implementation 2 : Space = O(1) {excluding space taken by recursion}
