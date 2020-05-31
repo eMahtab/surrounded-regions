@@ -129,7 +129,7 @@ class Solution {
     
     private void traverseBoundary(char[][] board, int row, int col) {
        if(row < 0 || row >= board.length || col < 0 || col >= board[0].length || 
-                     board[row][col] == 'X' || board[row][col] == '*')
+                     board[row][col] != 'O')
            return;
         
         board[row][col] = '*';
